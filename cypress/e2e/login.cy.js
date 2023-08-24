@@ -1,14 +1,15 @@
 /// <reference types="cypress" />
 
-const { LoginPage } = require("../pageobj/LoginPage");
+import LoginAction from "../pageobj/actions/LoginActions";
 
 describe("Login", () => {
+    const login = new LoginAction;
+
+    beforeEach(()=>{
+        login.navigateToURL()
+    })
+
     it('should login successfully', () => {
-        cy.visit("https://kasirdemo.belajarqa.com/");
-        const ln = new LoginPage();
-        ln.setUsername("toko@toki.com")
-        ln.setPassword("1234567")
-        ln.clickSubmit();
-        ln.getHomepage();
+        login.withValidCredential("toko@toki.com","1234567")
     })
 })

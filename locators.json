@@ -1,0 +1,10 @@
+{
+    "loginPage":
+    {
+        "txtEmail":"#email",
+        "txtPassword":"#password",
+        "btnSubmit":"button[type='submit']",
+        "homePage":".chakra-container.css-9rmdie",
+        "toast":".css-11jlpvc > .chakra-alert >"
+    }
+}
