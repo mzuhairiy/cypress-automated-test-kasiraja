@@ -5,6 +5,12 @@
         "txtPassword":"#password",
         "btnSubmit":"button[type='submit']",
         "homePage":".chakra-container.css-9rmdie",
-        "toast":".css-11jlpvc > .chakra-alert >"
+        "toast":"div[role='alert']"
+    },
+
+    "homepage":
+    {
+        "mainpage":".chakra-container.css-9rmdie"
     }
+
 }
