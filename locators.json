@@ -10,7 +10,20 @@
 
     "homepage":
     {
-        "mainpage":".chakra-container.css-9rmdie"
+        "mainpage":".chakra-container.css-9rmdie",
+        "categoryBtn":"body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(6) > div:nth-child(1)"
+    },
+
+    "categoryPage":
+    {
+        "navmenu":"div[class='css-tyo1sz'] a:nth-child(2)",
+        "btnTambah":".chakra-button.css-1piskbq",
+        "navmenu2":".css-tyo1sz",
+        "namaField":"#nama",
+        "deskripsiField":"#deskripsi",
+        "svBtn":".chakra-button",
+        "successToast":"#chakra-toast-manager-top-right > .chakra-toast > .chakra-toast__inner > div[role='alert'] > .css-njbp03 > .chakra-alert__desc",
+        "failedToast":"div[role='alert']"
     }
 
 }
