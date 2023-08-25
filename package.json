@@ -9,9 +9,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jquery": "^3.5.17",
     "cypress": "^12.17.4"
   },
   "dependencies": {
+    "jquery": "^3.7.0",
     "mochawesome": "^7.1.3"
   }
 }

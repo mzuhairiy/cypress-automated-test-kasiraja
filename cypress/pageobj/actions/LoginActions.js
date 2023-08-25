@@ -26,7 +26,7 @@ export default class LoginAction{
     }
 
     validateTokoName(){
-        hpelements.dashboard().should("contain", "tokozoo").and("be.visible");
+        hpelements.mainPage().should("contain", "tokozoo").and("be.visible");
     }
 
     validateErrorToast(){

@@ -23,6 +23,14 @@ export default class CategoryAction{
         catelements.saveBtn().click()
     }
 
+    withInvalidData(nama,deskripsi){
+        hpelements.categoryBtn().click()
+        catelements.btnTambah().click()
+        catelements.txtNamaField()
+        catelements.txtDescField().type(deskripsi)
+        catelements.saveBtn().click()
+    }
+
     validateSuccessToast(){
         catelements.successToast().should("contain", "item ditambahkan").and('be.visible');
     }

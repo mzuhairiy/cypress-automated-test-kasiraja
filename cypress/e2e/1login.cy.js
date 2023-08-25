@@ -1,11 +1,9 @@
 /// <reference types="cypress" />
 
 import LoginAction from "../pageobj/actions/LoginActions";
-import HomePageElements from "../pageobj/elements/HomeElements";
 
-describe("Login", () => {
+describe("Login feature", () => {
     const login = new LoginAction;
-    const hp = new HomePageElements;
 
     beforeEach(()=>{
         login.navigateToURL()
