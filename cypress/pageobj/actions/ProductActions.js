@@ -14,23 +14,7 @@ export default class ProductAction{
     
     withValidData(kode,nama,desc,hargabeli,hargajual,stok)
     {
-        ppelements.btnCategory().click()
-        ppelements.btnTambah().click()
-        ppelements.kodeField().type(kode)
-        ppelements.namaField().type(nama)
-        ppelements.descField().type(desc)
-        ppelements.hargaBeli().type(hargabeli)
-        ppelements.hargaJual().type(hargajual)
-        ppelements.stokField().type(stok)
-        ppelements.kategoriDropdown().click()
-        ppelements.nxtPage().click()
-        ppelements.kategoriElektronik().click()
-        ppelements.saveBtn().click()
-    }
-
-    withValidData(kode,nama,desc,hargabeli,hargajual,stok)
-    {
-        ppelements.btnCategory().click()
+        hpelements.productBtn().click()
         ppelements.btnTambah().click()
         ppelements.kodeField().type(kode)
         ppelements.namaField().type(nama)
@@ -46,7 +30,7 @@ export default class ProductAction{
 
     withInvalidData(kode,nama,desc,hargabeli,hargajual,stok)
     {
-        ppelements.btnCategory().click()
+        hpelements.productBtn().click()
         ppelements.btnTambah().click()
         ppelements.kodeField().type(kode)
         ppelements.namaField()
