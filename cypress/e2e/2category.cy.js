@@ -10,10 +10,14 @@ describe("Kategori feature", () => {
     const cp = new CategoryAction;
     
     beforeEach(()=>{
-        cp.navigateToURL()
-        login.withValidCredential("toko@toki.com","1234567")
+        cy.fixture('authkasiraja').then(function(data){
+            this.data = data
+            cy.log('THIS :', this.data)
+        login.navigateToURL()
+        login.withValidCredential(this.data.email,this.data.password)
         login.validateTokoName()
         hp.categoryBtn()
+        })
     })
 
     it('should successfully create a category', () => {

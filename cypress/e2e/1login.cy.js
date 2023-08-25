@@ -6,11 +6,15 @@ describe("Login feature", () => {
     const login = new LoginAction;
 
     beforeEach(()=>{
+        cy.fixture('authkasiraja').then(function(data){
+            this.data = data
+            cy.log('THIS :', this.data)
+        })
         login.navigateToURL()
     })
 
-    it('should login successfully', () => {
-        login.withValidCredential("toko@toki.com","1234567")
+    it('should login successfully', function () {
+        login.withValidCredential(this.data.email,this.data.password)
         login.validateTokoName()
     })
 

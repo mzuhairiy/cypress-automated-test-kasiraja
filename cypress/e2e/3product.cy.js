@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+
 import LoginAction from "../pageobj/actions/LoginActions";
 import ProductAction from "../pageobj/actions/ProductActions";
 import HomePageElements from "../pageobj/elements/HomeElements";
@@ -13,10 +14,14 @@ describe("Product feature", () => {
             this.data = data
             // cy.log('This', this.data)
         })
+        cy.fixture('authkasiraja').then(function(data){
+            this.data1 = data
+            // cy.log('This', this.data)
         login.navigateToURL()
-        login.withValidCredential("toko@toki.com","1234567")
+        login.withValidCredential(this.data1.email,this.data1.password)
         login.validateTokoName()
         hp.categoryBtn()
+        })
     })
 
     it('should successfully create a product', function () {
@@ -24,7 +29,7 @@ describe("Product feature", () => {
         pp.validateSuccesToast()
     })
 
-    it.only('should fail to create a product due to empty name', function () {
+    it('should fail to create a product due to empty name', function () {
         pp.withInvalidData(this.data.kode,this.data.nama,this.data.deskripsi,this.data.harga_beli,this.data.harga_jual,this.data.stok)
         pp.validateFailedToast()
     })
