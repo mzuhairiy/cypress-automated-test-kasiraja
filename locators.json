@@ -11,7 +11,32 @@
     {
         "dashboard":".chakra-container.css-9rmdie",
         "categoryBtn":"body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(6) > div:nth-child(1)",
-        "productBtn":"body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(7) > div:nth-child(1)"
+        "productBtn":"body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(7) > div:nth-child(1)",
+        "userBtn":"body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(8) > div:nth-child(1)",
+        "customerBtn":"body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(9) > div:nth-child(1)"
+    },
+
+    "userPage":
+    {
+        "btnTambah":".chakra-button.css-1piskbq",
+        "namaField":"#nama",
+        "emailField":"#email",
+        "passwordField":"#password",
+        "svBtn":"button[class='chakra-button css-l5lnz6']",
+        "successToast":"#chakra-toast-manager-top-right > .chakra-toast > .chakra-toast__inner > div[role='alert'] > .css-njbp03 > .chakra-alert__desc",
+        "failedToast":"div[role='alert'].chakra-alert.css-qwanz3"
+    },
+
+    "customerPage":
+    {
+        "btnTambah":".chakra-button.css-1piskbq",
+        "namaField":"#nama",
+        "noHpField":"body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > input:nth-child(1)",
+        "alamatField":"#alamat",
+        "ketField":"#keterangan",
+        "svBtn":"button[class='chakra-button css-l5lnz6']",
+        "successToast":"#chakra-toast-manager-top-right > .chakra-toast > .chakra-toast__inner > div[role='alert'] > .css-njbp03 > .chakra-alert__desc",
+        "failedToast":"div[role='alert'].chakra-alert.css-qwanz3"
     },
 
     "categoryPage":

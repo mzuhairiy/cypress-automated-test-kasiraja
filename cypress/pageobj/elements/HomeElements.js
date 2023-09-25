@@ -17,4 +17,14 @@ export default class HomePageElements{
     {
         return cy.get(loc.homepage.productBtn)
     }
+
+    userBtn()
+    {
+        return cy.get(loc.homepage.userBtn)
+    }
+
+    customerBtn()
+    {
+        return cy.get(loc.homepage.customerBtn)
+    }
 }
