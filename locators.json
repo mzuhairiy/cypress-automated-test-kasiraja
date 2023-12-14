@@ -63,9 +63,9 @@
         "kategori":"#kategori",
         "prvPage":".chakra-stack.css-32gsyd > div:nth-child(1)",
         "nxtPage":".chakra-stack.css-32gsyd > div:nth-child(2)",
-        "kategoriElektronik":"tbody tr:nth-child(8) td:nth-child(1)",
+        "kategoriElektronik": ":nth-child(1) > .css-u3dlpe",
         "svBtn":"button[class='chakra-button css-l5lnz6']",
         "successToast":"#chakra-toast-portal > #chakra-toast-manager-top-right > .chakra-toast > .chakra-toast__inner div[role='alert'] > .css-njbp03 > .chakra-alert__desc.css-zycdy9",
-        "failedToast":".css-k008qs > .css-1r35f0l > .chakra-container.css-9rmdie > .css-1t33j5j > .chakra-alert.css-qwanz3"
+        "failedToast":".chakra-alert"
     }
 }
