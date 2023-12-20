@@ -26,6 +26,7 @@ export default class LoginAction{
     }
 
     validateTokoName(){
+        cy.wait(10);
         hpelements.mainPage().should("contain", "toko-toki").and("be.visible");
     }
 

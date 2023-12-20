@@ -3,6 +3,10 @@
 import UserActions from "../pageobj/actions/UserActions";
 import LoginAction from "../pageobj/actions/LoginActions";
 import HomePageElements from "../pageobj/elements/HomeElements";
+import {faker} from "@faker-js/faker";
+
+const randomEmail = faker.internet.email();
+const randomName = faker.internet.userName();
 
 describe("User feature", () => {
     const login = new LoginAction;
@@ -24,7 +28,7 @@ describe("User feature", () => {
     })
 
     it('should successfully create a new user', function() {
-        us.withValidData(this.data.nama, this.data.email, this.data.password)
+        us.withValidData(randomName, randomEmail, this.data.password)
         us.validateSuccessToast()
     })
 })
