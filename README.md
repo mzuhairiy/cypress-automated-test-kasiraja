@@ -1,5 +1,6 @@
 # Automation Testing UI
 Automation testing for the KasirAja website using Cypress.
+This automation using Page Object Model.
 # About the Automation
 Automation for Login, Category, Product, and User menus.
 # How to run the Automation
